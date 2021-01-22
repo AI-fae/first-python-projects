@@ -30,7 +30,7 @@ while 1:
           
 colours = random.choice(["green", "gray", "black", "white", "purple", "nude", "orange"])
 numbers = random.choice([v  for v in range(21  ) if v % 2 == 0 ])
-fruits = random.choice(["bannana", "orange", "apple", "mango", "pear", "guava", "strawberry"])
+fruits = random.choice(["banana", "orange", "apple", "mango", "pear", "guava", "strawberry"])
 soups = random.choice(["afang", "egusi", "okra", "oha", "bitterleaf", "editan", "atama"])
 cereals = random.choice(["oat", "maize", "wheat", "sorghum", "rice", "millet"])
 
@@ -46,7 +46,7 @@ class GuessingGame:
         print("At the game hub, you are rewarded for the right intuition")
         
     def the_guess(self):
-        print(self.right_choice)
+       # print(self.right_choice)
         wrong_guesses = []
 
         user_input = input("Take a guess:  \n>>> ")
@@ -61,7 +61,7 @@ class GuessingGame:
                 user_input = input(f"oh no! you are almost there. try again...")
                 
          
-              x += 1
+            x += 1
         self.response = x
         self.wrong_guesses =  str(wrong_guesses)
 
